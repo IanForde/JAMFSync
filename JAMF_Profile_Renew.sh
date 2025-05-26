@@ -25,6 +25,7 @@ choices(){
         echo "invalid option selected" 
     fi
 }
+while true; do
 USER_CHOICE=$(osascript <<EOD
 set options to {"Jamf Recon", "Jamf Policy", "Renew Profile", "Exit"}
 choose from list options with title "JAMF Commands" with prompt "Select a JAMF command to execute:" default items {"Jamf Recon"}
@@ -32,3 +33,4 @@ EOD
 )
 
 choices
+done
