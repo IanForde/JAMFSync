@@ -23,6 +23,7 @@ choices(){
         continue
     elif [[ "$USER_CHOICE" == "Exit" ]]; then
         echo "Closing Script" 
+        exit 0
     else    
         echo "invalid option selected" 
     fi
