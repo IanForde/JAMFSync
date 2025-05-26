@@ -21,6 +21,8 @@ choices(){
         echo "Profile Renewal Complete"
         sleep 2
         continue
+    elif [[ "$USER_CHOICE" == "Exit" ]]; then
+        echo "Closing Script" 
     else    
         echo "invalid option selected" 
     fi
